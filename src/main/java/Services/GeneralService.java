@@ -59,12 +59,12 @@ public class GeneralService<T> {
 
         try {
             if (em.find(claseEntidadGeneral, getValorCampo(entidad)) != null) {
-                System.out.println("La entidad a guardar existe, no creada.");
+                System.out.println("Ya existe la entidad.");
                 return;
             }
         } catch (IllegalArgumentException ie) {
             //
-            System.out.println("Parametro aceptado. No agregado");
+            System.out.println("No se guardo");
         }
 
         em.getTransaction().begin();

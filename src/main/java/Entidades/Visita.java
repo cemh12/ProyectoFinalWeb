@@ -29,12 +29,15 @@ public class Visita implements Serializable {
     public Time getHora() {
         return hora;
     }
+    public Date getFecha() {
+        return fecha;
+    }
 
     public void setHora(Time hora) {
         this.hora = hora;
     }
 
-    public void setFechaGuardado(Date fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
