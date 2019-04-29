@@ -342,6 +342,17 @@ public class Main {
             usuario.setUsuario(request.queryParams("Usuario"));
             usuario.setRol("Ninguno");
             UsuarioService.getInstancia().crear(usuario);
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
+            }
             return new ModelAndView(attributes, "Home.ftl");
         }, freeMarkerEngine);
 
@@ -369,7 +380,6 @@ public class Main {
                 int esMantenerSesion = (request.queryParams("colocarCookieDeMantenerSesion") != null?86400:1000);
                 if (user != null && usuario == null) {
                     response.cookie("/", "usuario", userEncripted, esMantenerSesion, false);
-                    response.cookie("/", "esAdministrador", userRole, esMantenerSesion, false);
                     System.out.println(user.getNombre());
                     ///Map<String, Object> attributes = new HashMap<>();
                     // attributes.put("titulo", attributes);
