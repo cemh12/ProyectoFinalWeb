@@ -59,11 +59,7 @@
                     <td><a href="https://cemh12.me/${Url.hashMaked}">https://cemh12.me/${Url.hashMaked}</a>
                     </td>
                     <td><img src="
-https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://cemh12.me/${Url.hashMaked}"</td>
-                    <td> <img src="<img
-  style="max-width: 250px"
-                        src="https://api.microlink.io/?url=${Url.url}"
-                        />" </td>
+        https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://cemh12.me/${Url.hashMaked}"</td>
 
                     <td>
                         <a href="/${Url.hashMaked}/estadisticas/" class="btn btn-light" role="button">Estadisticas </a>

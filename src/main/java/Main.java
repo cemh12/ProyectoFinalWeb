@@ -1,7 +1,8 @@
 
-import Entidades.Shortener;
+import Entidades.*;
 import Services.UrlsService;
 import Services.UsuarioService;
+import Services.VisitaDiaService;
 import Services.VisitaService;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
@@ -11,9 +12,6 @@ import org.h2.util.DateTimeUtils;
 import org.jasypt.util.text.StrongTextEncryptor;
 import soap.Arranque;
 import spark.*;
-import Entidades.Visita;
-import Entidades.DireccionURL;
-import Entidades.Usuario;
 import spark.template.freemarker.FreeMarkerEngine;
 import utils.JsonUtils;
 
@@ -21,7 +19,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.validation.constraints.Null;
-
+import java.time.LocalDate;
 import java.sql.Array;
 import java.util.*;
 import java.sql.Time;
@@ -68,6 +66,14 @@ public class Main {
 
         get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }
             return new ModelAndView(attributes, "Home.ftl");
         }, freeMarkerEngine);
 
@@ -82,6 +88,8 @@ public class Main {
             {
                 direccionURL.setUsuario(user);
                 System.out.println(user.getNombre());
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
             }
             System.out.print(request.queryParams("URL"));
             Shortener u = new Shortener(5, "www.tinyurl.com/");
@@ -93,6 +101,14 @@ public class Main {
 
         get("/Usuarios/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
             attributes.put("usuarios", usuarios);
             return new ModelAndView(attributes, "ListarUsuarios.ftl");
@@ -100,25 +116,60 @@ public class Main {
 
         get("/Usuarios/:usuario/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }
             String usuario = request.params("usuario");
-            Usuario user = UsuarioService.getInstancia().find(usuario);
-            attributes.put("urls", user.getDireccionesURL());
+            Usuario user1 = UsuarioService.getInstancia().find(usuario);
+            attributes.put("urls", user1.getDireccionesURL());
             return new ModelAndView(attributes, "ListarURLS.ftl");
         }, freeMarkerEngine);
 
         get("/:hash/estadisticas/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }
             String hash = request.params("hash");
             DireccionURL direccionURL = UrlsService.getInstancia().findByHash(hash);
+            List<VisitaDia> visitaDia1 = VisitaDiaService.getInstancia().findAll();
+            List<VisitaDia> visitaDia = new ArrayList<VisitaDia>();
+            for (VisitaDia visita :visitaDia1) {
+
+                if(visita.getUrls().getHashMaked().equals(hash))
+                {
+                    visitaDia.add(visita);
+                }
+            }
             attributes.put("visitas", direccionURL.getVisitas());
+            attributes.put("visitaDia", visitaDia);
+
             return new ModelAndView(attributes, "ListarVisitas.ftl");
         }, freeMarkerEngine);
 
         get("/EditarUsuario/:usuario", (request, response) -> {
             String usuario = request.params("usuario");
             Map<String, Object> attributes = new HashMap<>();
-            Usuario user = UsuarioService.getInstancia().find(usuario);
-            attributes.put("usuario", user);
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+            }
+            Usuario user1 = UsuarioService.getInstancia().find(usuario);
+            attributes.put("usuario", user1);
             return new ModelAndView(attributes, "EditarUsuario.ftl");
         }, freeMarkerEngine);
 
@@ -130,6 +181,21 @@ public class Main {
             java.util.Date utilDate = new java.util.Date();
             java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
             Visita visita = new Visita();
+            VisitaDia visitadia1 = VisitaDiaService.getInstancia().findBy(direccionURL.getHashMaked(),LocalDate.now().getMonthValue(),
+                    LocalDate.now().getDayOfMonth(), LocalDate.now().getYear());
+            if(visitadia1 == null) {
+                VisitaDia visitaDia = new VisitaDia();
+                visitaDia.setDia(LocalDate.now().getDayOfMonth());
+                visitaDia.setMes(LocalDate.now().getMonthValue());
+                visitaDia.setAnio(LocalDate.now().getYear());
+                visitaDia.setUrls(direccionURL);
+                VisitaDiaService.getInstancia().crear(visitaDia);
+            }
+            else
+            {
+                visitadia1.setContador(visitadia1.getContador()+1);
+                VisitaDiaService.getInstancia().editar(visitadia1);
+            }
             visita.setFecha(sqlDate);
             visita.setIp(request.ip());
             visita.setNavegador(request.userAgent());
@@ -143,7 +209,19 @@ public class Main {
         get("/BorrarUsuario/:usuario", (request, response) -> {
             String usuario = request.params("usuario");
             Map<String, Object> attributes = new HashMap<>();
-            UsuarioService.getInstancia().eliminar(usuario);
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+                if(user.getRol().equals("Administrador"))
+                {
+                    UsuarioService.getInstancia().eliminar(usuario);
+                }
+            }
+
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
             attributes.put("usuarios", usuarios);
             return new ModelAndView(attributes, "ListarUsuarios.ftl");
@@ -153,9 +231,21 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             String usuario = request.params("usuario");
             String rol = request.queryParams("Rol");
-            Usuario user = UsuarioService.getInstancia().find(usuario);
-            user.setRol(rol);
-            UsuarioService.getInstancia().editar(user);
+            StrongTextEncryptor textEncryptor = new StrongTextEncryptor();
+            textEncryptor.setPassword(password);
+            Usuario user = UsuarioService.getInstancia().find(String.valueOf(textEncryptor.decrypt(request.cookie("usuario"))));
+            if(user != null)
+            {
+                attributes.put("nombre", user.getNombre());
+                attributes.put("rol", user.getRol());
+                if(user.getRol().equals("Administrador"))
+                {
+                    Usuario user1 = UsuarioService.getInstancia().find(usuario);
+                    user1.setRol(rol);
+                    UsuarioService.getInstancia().editar(user1);
+                }
+            }
+
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
             attributes.put("usuarios", usuarios);
             return new ModelAndView(attributes, "ListarUsuarios.ftl");

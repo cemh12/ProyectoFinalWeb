@@ -39,9 +39,30 @@
 <br><br><br><br>
 
 <div class="container">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
 
-    <header class="jumbotron my-4 text-center">
-    </header>
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Fecha', 'Visitas'],
+                <#list visitaDia as VisitaDia>
+                    ['Dia ${VisitaDia.dia} del mes ${VisitaDia.mes} ',  ${VisitaDia.contador}],
+                </#list>
+                ]);
+
+                var options = {
+                    title: 'Visitas por dia',
+                    hAxis: {title: 'Fecha',  titleTextStyle: {color: '#333'}},
+                    vAxis: {minValue: 0}
+                };
+
+                var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
 
     <div class="bg-primary text-center text-white">
         <table class="table">
