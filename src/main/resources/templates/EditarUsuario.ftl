@@ -26,9 +26,14 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/Usuarios/">Usuarios</a></li>
                 <li><a href="/Api/usuarios/">Usuarios REST</a></li>
-                <li><a href="/ws/usuarioWebService?wsdl">Soap</a></li>
-                <li><a href="/Registrar/">Registrarse</a></li>
-                <li><a href="/login/">Login</a></li>
+                <li><a href="/Api/urls/">Urls REST</a></li>
+                <#if rol == "No registrado">
+                    <li style="alignment: right"> <a href="/Registrar/">Registrarse</a></li>
+                    <li style="alignment: right"><a href="/login/">Login</a></li>
+                </#if>
+                <#if rol != "No registrado">
+                    <li style="alignment: right"> <a>${nombre} (${rol})</a></li>
+                </#if>
             </ul>
 
         </div>
@@ -42,18 +47,24 @@
         <h1 class="display-3">Modificar</h1>
     </header>
     <hr>
-    <form method="post" action="/EditarUsuario/${usuario.usuario}">
-        ${usuario.nombre}
-        <div class="form-group">
-            <label for="rol">Rol</label>
-            <select name="Rol" id="Rol">
-                <option title='Ninguno' value='Ninguno' selected='selected'>Ninguno</option>
-                <option title='Administrador' value='Administrador'>Administrador</option>
-            </select>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Guardar">
+    <#if rol == "Administrador">
+        <form method="post" action="/EditarUsuario/${usuario.usuario}">
+            ${usuario.nombre}
+            <div class="form-group">
+                <label for="rol">Rol</label>
+                <select name="Rol" id="Rol">
+                    <option title='Ninguno' value='Ninguno' selected='selected'>Ninguno</option>
+                    <option title='Administrador' value='Administrador'>Administrador</option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Guardar">
 
-    </form>
+        </form>
+    </#if>
+    <#if rol != "Administrador">
+        Usted no esta autorizado.
+    </#if>
+
 </div>
 </body>
 <script src="jquery/dist/jquery.js"></script>

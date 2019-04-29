@@ -26,9 +26,14 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/Usuarios/">Usuarios</a></li>
                 <li><a href="/Api/usuarios/">Usuarios REST</a></li>
-                <li><a href="/ws/usuarioWebService?wsdl">Soap</a></li>
-                <li><a href="/Registrar/">Registrarse</a></li>
-                <li><a href="/login/">Login</a></li>
+                <li><a href="/Api/urls/">Urls REST</a></li>
+                <#if rol == "No registrado">
+                    <li style="alignment: right"> <a href="/Registrar/">Registrarse</a></li>
+                    <li style="alignment: right"><a href="/login/">Login</a></li>
+                </#if>
+                <#if rol != "No registrado">
+                    <li style="alignment: right"> <a>${nombre} (${rol})</a></li>
+                </#if>
             </ul>
 
         </div>
@@ -64,7 +69,7 @@
         </script>
     <div id="chart_div" style="width: 100%; height: 500px;"></div>
 
-    <div class="bg-primary text-center text-white">
+    <div >
         <table class="table">
             <thead>
             <tr>
@@ -74,6 +79,7 @@
             </tr>
             </thead>
             <tbody>
+            <#if rol == "Administrador">
             <#list visitas as Visita>
                 <tr class="animated fadeInUp">
                     <td>${Visita.ip}</td>
@@ -81,6 +87,10 @@
                     <td> ${Visita.fecha}</td>
                 </tr>
             </#list>
+            </#if>
+            <#if rol != "Administrador">
+                Usted no esta autorizado.
+            </#if>
             </tbody>
         </table>
     </div>

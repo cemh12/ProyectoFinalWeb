@@ -27,9 +27,14 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/Usuarios/">Usuarios</a></li>
                 <li><a href="/Api/usuarios/">Usuarios REST</a></li>
-                <li><a href="/ws/usuarioWebService?wsdl">Soap</a></li>
-                <li><a href="/Registrar/">Registrarse</a></li>
-                <li><a href="/login/">Login</a></li>
+                <li><a href="/Api/urls/">Urls REST</a></li>
+                <#if rol == "No registrado">
+                    <li style="alignment: right"> <a href="/Registrar/">Registrarse</a></li>
+                    <li style="alignment: right"><a href="/login/">Login</a></li>
+                </#if>
+                <#if rol != "No registrado">
+                    <li style="alignment: right"> <a>${nombre} (${rol})</a></li>
+                </#if>
             </ul>
 
         </div>

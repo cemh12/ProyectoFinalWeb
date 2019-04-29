@@ -2,24 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77e1cc19-d749-45c9-bebb-fdf3a4872a3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Entidades/VisitaDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Services/VisitaDiaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/02223b13-71d7-49e3-8144-09d1c436bbbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/02223b13-71d7-49e3-8144-09d1c436bbbc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/ListarURLS.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/ListarURLS.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/ListarVisitas.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/ListarVisitas.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ProyectoFinal-0.1-all.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ProyectoFinal-0.1-all.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/EditarUsuario.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/EditarUsuario.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Home.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Home.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Home2.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Home2.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/ListarURLS.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/ListarURLS.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/ListarUsuarios.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/ListarUsuarios.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/ListarVisitas.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/ListarVisitas.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/Registrar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/Registrar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/shadowJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/shadowJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Home.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Home.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Home2.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Home2.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -98,15 +110,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3543">
-              <caret line="244" column="64" selection-start-line="244" selection-start-column="64" selection-end-line="244" selection-end-column="64" />
+            <state relative-caret-position="-2822">
+              <caret line="110" column="48" lean-forward="true" selection-start-line="110" selection-start-column="48" selection-end-line="110" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4643#4654#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home2.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-476">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-template-freemarker/2.7.1/c67c17ea2c6c80fe5eb3204d83de831018719363/spark-template-freemarker-2.7.1-sources.jar!/spark/template/freemarker/FreeMarkerEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-58">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -134,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Services/VisitaService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Create.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/Entidades/Shortener.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Entidades/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entidades/DireccionURL.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entidades/Visita.java" />
@@ -143,19 +234,20 @@
         <option value="$PROJECT_DIR$/src/main/java/soap/Arranque.java" />
         <option value="$PROJECT_DIR$/src/main/java/soap/UrlDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/soap/UsuarioWebService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Login.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Home2.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Home.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Entidades/VisitaDia.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/VisitaDiaService.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Home.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Home2.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl" />
       </list>
     </option>
   </component>
@@ -184,6 +276,17 @@
             <path>
               <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -199,6 +302,29 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Entidades" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoFinal" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +335,7 @@
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556561670299" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556572139897" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -232,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.ProyectoFinal-0.1-all.jar">
+  <component name="RunManager" selected="Gradle.ProyectoFinal [shadowJar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ProyectoFinal.main" />
@@ -265,8 +391,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.ProyectoFinal-0.1-all.jar" />
         <item itemvalue="Gradle.ProyectoFinal [shadowJar]" />
+        <item itemvalue="JAR Application.ProyectoFinal-0.1-all.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -281,15 +407,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556061991433</updated>
-      <workItem from="1556061992929" duration="37509000" />
+      <workItem from="1556061992929" duration="46574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37509000" />
+    <option name="totallyTimeSpent" value="46574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Persistence" side_tool="true" />
@@ -298,7 +425,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1442953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Console" weight="0.3297587" />
@@ -311,15 +438,15 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35656837" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35656837" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47989276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" weight="0.3295302" />
+      <window_info anchor="right" id="Gradle" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Database" weight="0.3295302" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
@@ -374,24 +501,25 @@
     <MESSAGE value="hyighyr" />
     <option name="LAST_COMMIT_MESSAGE" value="hyighyr" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Persistence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.197/23b998de929dba8b42a815057517f997d8b148e9/h2-1.4.197-sources.jar!/org/h2/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3eb03b41-40da-43bc-be5e-a0ac1d0c712f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -414,34 +542,6 @@
           <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entidades/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,48 +570,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home2.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -585,65 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-core/2.7.2/d73bdc786a4b84b5bd2a26206c17c84277e3ccce/spark-core-2.7.2-sources.jar!/spark/http/matching/MatcherFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-core/2.7.2/d73bdc786a4b84b5bd2a26206c17c84277e3ccce/spark-core-2.7.2-sources.jar!/spark/embeddedserver/jetty/JettyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/session/SessionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="1585" selection-start-line="1585" selection-end-line="1585" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/handler/ScopedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="533" selection-start-line="533" selection-end-line="533" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/HttpChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="509" selection-start-line="509" selection-end-line="509" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entidades/DireccionURL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Services/GeneralService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -697,27 +696,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entidades/DireccionURL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="85" />
+        <state relative-caret-position="85">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,14 +726,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/HttpConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3543">
-          <caret line="244" column="64" selection-start-line="244" selection-start-column="64" selection-end-line="244" selection-end-column="64" />
+        <state relative-caret-position="133">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.8.v20171121/41f25e1e1bba14ab0d3415488fa189f09c27a1cf/jetty-io-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/io/AbstractConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="279" selection-start-line="279" selection-end-line="279" />
+          <folding>
+            <element signature="e#7194#7195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.8.v20171121/41f25e1e1bba14ab0d3415488fa189f09c27a1cf/jetty-io-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/io/FillInterest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.8.v20171121/41f25e1e1bba14ab0d3415488fa189f09c27a1cf/jetty-io-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/io/ChannelEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#3548#3549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.8.v20171121/a74ecb43f96b2e21852f6908604316d7348a16ad/jetty-util-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/util/thread/strategy/EatWhatYouKill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.8.v20171121/a74ecb43f96b2e21852f6908604316d7348a16ad/jetty-util-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="663" selection-start-line="663" selection-end-line="663" />
+          <folding>
+            <element signature="e#22005#22006#0" expanded="true" />
+            <element signature="e#22030#22031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="533" selection-start-line="533" selection-end-line="533" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/HttpChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="357" selection-start-line="357" selection-end-line="357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entidades/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4643#4654#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-core/2.7.2/d73bdc786a4b84b5bd2a26206c17c84277e3ccce/spark-core-2.7.2-sources.jar!/spark/http/matching/MatcherFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-core/2.7.2/d73bdc786a4b84b5bd2a26206c17c84277e3ccce/spark-core-2.7.2-sources.jar!/spark/embeddedserver/jetty/JettyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/session/SessionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="1585" selection-start-line="1585" selection-end-line="1585" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/handler/ScopedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.8.v20171121/fef49ac6b2bbc6d142dc0be34f68f0fb0792d52b/jetty-server-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/EditarUsuario.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Home2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sparkjava/spark-template-freemarker/2.7.1/c67c17ea2c6c80fe5eb3204d83de831018719363/spark-template-freemarker-2.7.1-sources.jar!/spark/template/freemarker/FreeMarkerEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2822">
+          <caret line="110" column="48" lean-forward="true" selection-start-line="110" selection-start-column="48" selection-end-line="110" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Registrar.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarUsuarios.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarURLS.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ListarVisitas.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
         </state>
       </provider>
     </entry>

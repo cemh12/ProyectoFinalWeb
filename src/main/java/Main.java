@@ -4,29 +4,31 @@ import Services.UrlsService;
 import Services.UsuarioService;
 import Services.VisitaDiaService;
 import Services.VisitaService;
-import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import freemarker.template.Configuration;
-import javassist.compiler.Javac;
-import org.h2.util.DateTimeUtils;
 import org.jasypt.util.text.StrongTextEncryptor;
+import org.jsoup.Jsoup;
 import soap.Arranque;
-import spark.*;
+import spark.ModelAndView;
+import spark.Spark;
 import spark.template.freemarker.FreeMarkerEngine;
 import utils.JsonUtils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.validation.constraints.Null;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.time.LocalDate;
-import java.sql.Array;
-import java.util.*;
-import java.sql.Time;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static spark.Spark.*;
 
@@ -62,6 +64,56 @@ public class Main {
                 }, JsonUtils.json());
 
             });
+            path("/urls", () -> {
+                get("/", (request, response) -> {
+                    ArrayList<DireccionURL> listaUrl = new ArrayList<>();
+                    List<DireccionURL> urls = UrlsService.getInstancia().findAll();
+                    for (DireccionURL u: UrlsService.getInstancia().findAll()) {
+                        System.out.print(u.getUrl());
+                        u.setVisitas(null);
+                        u.setUsuario(null);
+                        listaUrl.add(u);
+                    }
+                    return listaUrl;
+                }, JsonUtils.json());
+
+            });
+            path("/urls", () -> {
+                get("/user/:usuario/", (request, response) -> {
+                    String usuario = request.params("usuario");
+
+                    ArrayList<DireccionURL> listaUrl = new ArrayList<>();
+                    for (DireccionURL u: UrlsService.getInstancia().findAll()) {
+
+                        u.setVisitas(null);
+                        Usuario user = u.getUsuario();
+                        u.setUsuario(null);
+                        if(user.getUsuario().equals(usuario)) {
+
+                                listaUrl.add(u);
+
+                        }
+                    }
+                    return listaUrl;
+                }, JsonUtils.json());
+
+            });
+            path("/urls", () -> {
+                get("/:hashmaked/", (request, response) -> {
+                    String hashmaked = request.params("hashmaked");
+                    DireccionURL direccionURL = UrlsService.getInstancia().findByHash(hashmaked);
+
+                    URL url = new URL("https://api.linkpreview.net?key=5cc75295d995e28a1faa9dd2f69eeef4279da40dcdfe0&q="+direccionURL.getUrl());
+                    URLConnection request1 = url.openConnection();
+                    request1.connect();
+                    JsonParser jp = new JsonParser(); //from gson
+                    JsonElement root = jp.parse(new InputStreamReader((InputStream) request1.getContent())); //Convert the input stream to a json element
+                    //May be an array, may be an object.
+                    return  root.getAsJsonObject();
+                }, JsonUtils.json());
+
+            });
+
          });
 
         get("/", (request, response) -> {
@@ -73,6 +125,9 @@ public class Main {
             {
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             return new ModelAndView(attributes, "Home.ftl");
         }, freeMarkerEngine);
@@ -90,6 +145,9 @@ public class Main {
                 System.out.println(user.getNombre());
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             System.out.print(request.queryParams("URL"));
             Shortener u = new Shortener(5, "www.tinyurl.com/");
@@ -108,6 +166,9 @@ public class Main {
             {
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
             attributes.put("usuarios", usuarios);
@@ -123,6 +184,9 @@ public class Main {
             {
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             String usuario = request.params("usuario");
             Usuario user1 = UsuarioService.getInstancia().find(usuario);
@@ -139,6 +203,9 @@ public class Main {
             {
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             String hash = request.params("hash");
             DireccionURL direccionURL = UrlsService.getInstancia().findByHash(hash);
@@ -167,6 +234,9 @@ public class Main {
             {
                 attributes.put("nombre", user.getNombre());
                 attributes.put("rol", user.getRol());
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
             Usuario user1 = UsuarioService.getInstancia().find(usuario);
             attributes.put("usuario", user1);
@@ -189,6 +259,7 @@ public class Main {
                 visitaDia.setMes(LocalDate.now().getMonthValue());
                 visitaDia.setAnio(LocalDate.now().getYear());
                 visitaDia.setUrls(direccionURL);
+                visitaDia.setContador(1);
                 VisitaDiaService.getInstancia().crear(visitaDia);
             }
             else
@@ -220,6 +291,9 @@ public class Main {
                 {
                     UsuarioService.getInstancia().eliminar(usuario);
                 }
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
 
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
@@ -244,6 +318,9 @@ public class Main {
                     user1.setRol(rol);
                     UsuarioService.getInstancia().editar(user1);
                 }
+            }else{
+                attributes.put("nombre", "No registrado");
+                attributes.put("rol", "No registrado");
             }
 
             List<Usuario> usuarios = UsuarioService.getInstancia().findAll();
